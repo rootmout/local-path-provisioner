@@ -38,6 +38,11 @@ storageClass:
   ## The default volume type this storage class creates, can be "local" or "hostPath"
   defaultVolumeType: hostPath
 
+  ## Add extra parameters to the StorageClass.
+  parameters: {}
+  #  nodePath will ask the provider to chose that location if multiple paths are available.
+  #  nodePath: /opt/local-path-provisioner
+
   ## Set a StorageClass name
   ## Ignored if storageClass.create is false
   name: local-path
